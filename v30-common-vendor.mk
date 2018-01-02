@@ -1251,4 +1251,6 @@ vendor/lge/v30-common/proprietary/lib/libfilm_emulation.so:system/lib/libfilm_em
 vendor/lge/v30-common/proprietary/lib/libfilm_emulation_symphony.so:system/lib/libfilm_emulation_symphony.so \
 vendor/lge/v30-common/proprietary/lib/libbwfocuspeaking.so:system/lib/libbwfocuspeaking.so \
 vendor/lge/v30-common/proprietary/vendor/lib/libcinemaeffect.so:system/vendor/lib/libcinemaeffect.so \
-vendor/lge/v30-common/proprietary/lib64/libn2ph.so:system/lib64/libn2ph.so 
+vendor/lge/v30-common/proprietary/lib64/libn2ph.so:system/lib64/libn2ph.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libqseed3.so:system/vendor/lib64/libqseed3.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqseed3.so:system/vendor/lib/libqseed3.so
