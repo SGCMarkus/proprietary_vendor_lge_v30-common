@@ -346,7 +346,6 @@ vendor/lge/v30-common/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbd
 vendor/lge/v30-common/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
 vendor/lge/v30-common/proprietary/etc/acdbdata/Handset_cal.acdb:system/etc/acdbdata/Handset_cal.acdb \
 vendor/lge/v30-common/proprietary/etc/acdbdata/Global_cal.acdb:system/etc/acdbdata/Global_cal.acdb \
-vendor/lge/v30-common/proprietary/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml:system/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml \
 vendor/lge/v30-common/proprietary/etc/camera/imx351_chromatix.xml:system/etc/camera/imx351_chromatix.xml \
 vendor/lge/v30-common/proprietary/etc/camera/film/7_film.dat:system/etc/camera/film/7_film.dat \
 vendor/lge/v30-common/proprietary/etc/camera/film/9_film.dat:system/etc/camera/film/9_film.dat \
@@ -436,3 +435,820 @@ vendor/lge/v30-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so
 vendor/lge/v30-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
 vendor/lge/v30-common/proprietary/lib/liblgmda.so:system/lib/liblgmda.so \
 vendor/lge/v30-common/proprietary/lib/libarcsoft_object_tracking.so:system/lib/libarcsoft_object_tracking.so
+
+# from msm8998-common
+
+PRODUCT_COPY_FILES += \
+        vendor/lge/v30-common/proprietary/bin/pm-proxy:system/bin/pm-proxy \
+	vendor/lge/v30-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+	vendor/lge/v30-common/proprietary/bin/netmgrd:system/bin/netmgrd \
+	vendor/lge/v30-common/proprietary/bin/cnd:system/bin/cnd \
+	vendor/lge/v30-common/proprietary/bin/radish:system/bin/radish \
+	vendor/lge/v30-common/proprietary/bin/qseecomd:system/bin/qseecomd \
+	vendor/lge/v30-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+	vendor/lge/v30-common/proprietary/bin/dpmd:system/bin/dpmd \
+	vendor/lge/v30-common/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+	vendor/lge/v30-common/proprietary/bin/time_daemon:system/bin/time_daemon \
+	vendor/lge/v30-common/proprietary/bin/pm-service:system/bin/pm-service \
+	vendor/lge/v30-common/proprietary/bin/imscmservice:system/bin/imscmservice \
+	vendor/lge/v30-common/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
+	vendor/lge/v30-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+	vendor/lge/v30-common/proprietary/bin/tftp_server:system/bin/tftp_server \
+	vendor/lge/v30-common/proprietary/bin/irsc_util:system/bin/irsc_util \
+	vendor/lge/v30-common/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
+	vendor/lge/v30-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+	vendor/lge/v30-common/proprietary/bin/loc_launcher:system/bin/loc_launcher \
+	vendor/lge/v30-common/proprietary/bin/energy-awareness:system/bin/energy-awareness \
+	vendor/lge/v30-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
+	vendor/lge/v30-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+	vendor/lge/v30-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+	vendor/lge/v30-common/proprietary/vendor/bin/pd-mapper:system/vendor/bin/pd-mapper \
+	vendor/lge/v30-common/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+	vendor/lge/v30-common/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
+	vendor/lge/v30-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+	vendor/lge/v30-common/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
+	vendor/lge/v30-common/proprietary/vendor/qcril.db:system/vendor/qcril.db \
+	vendor/lge/v30-common/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile200.conf:system/vendor/etc/perf-profile200.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile210.conf:system/vendor/etc/perf-profile210.conf \
+	vendor/lge/v30-common/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
+	vendor/lge/v30-common/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libevent_observer.so:system/vendor/lib64/libevent_observer.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libvpphvx.so:system/vendor/lib64/libvpphvx.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:system/vendor/lib64/soundfx/libqcreverb.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:system/vendor/lib64/soundfx/libqcbassboost.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/soundfx/libqcvirt.so:system/vendor/lib64/soundfx/libqcvirt.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxApeDecSw.so:system/vendor/lib64/libOmxApeDecSw.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libhdr_tm.so:system/vendor/lib64/libhdr_tm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqisl.so:system/vendor/lib64/libqisl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libfastcvopt.so:system/vendor/lib64/libfastcvopt.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxAlacDec.so:system/vendor/lib64/libOmxAlacDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_user_cal.so:system/vendor/lib64/libsensor_user_cal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libc2d30-a5xx.so:system/vendor/lib64/libc2d30-a5xx.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqti-wl.so:system/vendor/lib64/libqti-wl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libadsp_default_listener.so:system/vendor/lib64/libadsp_default_listener.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxMux.so:system/vendor/lib64/libOmxMux.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxApeDec.so:system/vendor/lib64/libOmxApeDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/hw/vulkan.msm8998.so:system/vendor/lib64/hw/vulkan.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/hw/gatekeeper.msm8998.so:system/vendor/lib64/hw/gatekeeper.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/hw/keystore.msm8998.so:system/vendor/lib64/hw/keystore.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/hw/activity_recognition.msm8998.so:system/vendor/lib64/hw/activity_recognition.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_test.so:system/vendor/lib64/libsensor_test.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libStDrvInt.so:system/vendor/lib64/libStDrvInt.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsdm-color.so:system/vendor/lib64/libsdm-color.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_lge_cal.so:system/vendor/lib64/libsensor_lge_cal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_thresh.so:system/vendor/lib64/libsensor_thresh.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxAlacDecSw.so:system/vendor/lib64/libOmxAlacDecSw.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbmapper.so:system/vendor/lib64/libacdbmapper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libmdsprpc.so:system/vendor/lib64/libmdsprpc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libtinyxml2_1.so:system/vendor/lib/libtinyxml2_1.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libvpphvx.so:system/vendor/lib/libvpphvx.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxApeDecSw.so:system/vendor/lib/libOmxApeDecSw.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libhdr_tm.so:system/vendor/lib/libhdr_tm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqisl.so:system/vendor/lib/libqisl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxVideoDSMode.so:system/vendor/lib/libOmxVideoDSMode.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqti-wl.so:system/vendor/lib/libqti-wl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxApeDec.so:system/vendor/lib/libOmxApeDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/hw/vulkan.msm8998.so:system/vendor/lib/hw/vulkan.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/hw/gatekeeper.msm8998.so:system/vendor/lib/hw/gatekeeper.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/hw/keystore.msm8998.so:system/vendor/lib/hw/keystore.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8998.so:system/vendor/lib/hw/sound_trigger.primary.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/hw/activity_recognition.msm8998.so:system/vendor/lib/hw/activity_recognition.msm8998.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_lge_cal.so:system/vendor/lib/libsensor_lge_cal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_thresh.so:system/vendor/lib/libsensor_thresh.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libOmxAlacDecSw.so:system/vendor/lib/libOmxAlacDecSw.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
+	vendor/lge/v30-common/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
+	vendor/lge/v30-common/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
+	vendor/lge/v30-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
+	vendor/lge/v30-common/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
+	vendor/lge/v30-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+	vendor/lge/v30-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+	vendor/lge/v30-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+	vendor/lge/v30-common/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+	vendor/lge/v30-common/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
+	vendor/lge/v30-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
+	vendor/lge/v30-common/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
+	vendor/lge/v30-common/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+	vendor/lge/v30-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+	vendor/lge/v30-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
+	vendor/lge/v30-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+	vendor/lge/v30-common/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/etc/cne/wqeclient/ATT/ATT_profile2.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/etc/cne/wqeclient/ATT/ATT_profile3.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/etc/cne/wqeclient/ATT/ATT_profile1.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ATT/ATT_profile4.xml:system/etc/cne/wqeclient/ATT/ATT_profile4.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ROW/ROW_profile2.xml:system/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ROW/ROW_profile4.xml:system/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ROW/ROW_profile5.xml:system/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ROW/ROW_profile1.xml:system/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/ROW/ROW_profile3.xml:system/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/etc/cne/wqeclient/VZW/VZW_profile4.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile3.xml:system/etc/cne/wqeclient/VZW/VZW_profile3.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile1.xml:system/etc/cne/wqeclient/VZW/VZW_profile1.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/etc/cne/wqeclient/VZW/VZW_profile5.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile2.xml:system/etc/cne/wqeclient/VZW/VZW_profile2.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml \
+	vendor/lge/v30-common/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+	vendor/lge/v30-common/proprietary/etc/camera/film/7_film.dat:system/etc/camera/film/7_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/9_film.dat:system/etc/camera/film/9_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/0_film.dat:system/etc/camera/film/0_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/8_film.dat:system/etc/camera/film/8_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/10_film.dat:system/etc/camera/film/10_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/3_film.dat:system/etc/camera/film/3_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/5_film.dat:system/etc/camera/film/5_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/2_film.dat:system/etc/camera/film/2_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/4_film.dat:system/etc/camera/film/4_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/1_film.dat:system/etc/camera/film/1_film.dat \
+	vendor/lge/v30-common/proprietary/etc/camera/film/6_film.dat:system/etc/camera/film/6_film.dat \
+	vendor/lge/v30-common/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+	vendor/lge/v30-common/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+	vendor/lge/v30-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_5_0.fw:system/etc/firmware/cpp_firmware_v1_5_0.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+	vendor/lge/v30-common/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+	vendor/lge/v30-common/proprietary/lib64/libOmxVpp.so:system/lib64/libOmxVpp.so \
+	vendor/lge/v30-common/proprietary/lib64/hw/lgkm.msm8998.so:system/lib64/hw/lgkm.msm8998.so \
+	vendor/lge/v30-common/proprietary/lib64/hw/lgkm.default.so:system/lib64/hw/lgkm.default.so \
+	vendor/lge/v30-common/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
+	vendor/lge/v30-common/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
+	vendor/lge/v30-common/proprietary/lib64/liblgkm.so:system/lib64/liblgkm.so \
+	vendor/lge/v30-common/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
+	vendor/lge/v30-common/proprietary/lib/hw/lgkm.msm8998.so:system/lib/hw/lgkm.msm8998.so \
+	vendor/lge/v30-common/proprietary/lib/hw/lgkm.default.so:system/lib/hw/lgkm.default.so \
+	vendor/lge/v30-common/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+	vendor/lge/v30-common/proprietary/lib/liblgkm.so:system/lib/liblgkm.so \
+        vendor/lge/v30-common/proprietary/lib/libSJFingerDetect.so:system/lib/libSJFingerDetect.so \
+        vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1:system/vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1 \
+        vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/mmecns_module.so.1:system/vendor/lib/rfsa/adsp/mmecns_module.so.1 \
+        vendor/lge/v30-common/proprietary/lib/libSJVideoNR.so:system/lib/libSJVideoNR.so
+
+PRODUCT_PACKAGES += \
+    HotwordEnrollment \
+    libloc_api_v02 \
+    libdsi_netctrl \
+    libgpustats \
+    libqmi_cci \
+    libqmi_common_so \
+    libqmiservices \
+    libsdm-disp-apis \
+    libthermalclient \
+    libtime_genoff \
+    TimeService \
+    shutdownlistener \
+    CNEService \
+    QtiTetherService \
+    com.qualcomm.location \
+    dpmserviceapp \
+    qcrilmsgtunnel \
+    qcrilhook
+
+-include vendor/extra/devices.mk
+ifneq ($(call is-qc-perf-target),true)
+PRODUCT_COPY_FILES += \
+    vendor/lge/v30-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile200.conf:system/vendor/etc/perf-profile200.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile210.conf:system/vendor/etc/perf-profile210.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
+    vendor/lge/v30-common/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
+    vendor/lge/v30-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/lge/v30-common/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+    vendor/lge/v30-common/proprietary/vendor/lib/libspl.so:system/vendor/lib/libspl.so \
+    vendor/lge/v30-common/proprietary/vendor/lib64/libspl.so:system/vendor/lib64/libspl.so \
+    vendor/lge/v30-common/proprietary/vendor/lib/libqti-util.so:system/vendor/lib/libqti-util.so \
+    vendor/lge/v30-common/proprietary/vendor/lib64/libqti-util.so:system/vendor/lib64/libqti-util.so \
+    vendor/lge/v30-common/proprietary/vendor/lib/libqti-utils.so:system/vendor/lib/libqti-utils.so \
+    vendor/lge/v30-common/proprietary/vendor/lib64/libqti-utils.so:system/vendor/lib64/libqti-utils.so
+
+endif
+
+# output for camera.msm8998.so dependencies:
+
+PRODUCT_COPY_FILES += \
+vendor/lge/v30-common/proprietary/lib/hw/camera.msm8998.so:system/lib/hw/camera.msm8998.so \
+vendor/lge/v30-common/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so:system/vendor/lib/libmmcamera2_mct_shimlayer.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_mct.so:system/vendor/lib/libmmcamera2_mct.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera_dbg.so:system/vendor/lib64/libmmcamera_dbg.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_dbg.so:system/vendor/lib/libmmcamera_dbg.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera2_stats_lib.so:system/vendor/lib64/libmmcamera2_stats_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_stats_lib.so:system/vendor/lib/libmmcamera2_stats_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera2_is.so:system/vendor/lib64/libmmcamera2_is.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libfastcvopt.so:system/vendor/lib64/libfastcvopt.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
+vendor/lge/v30-common/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
+vendor/lge/v30-common/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
+vendor/lge/v30-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libGLESv2_adreno.so:system/vendor/lib64/libGLESv2_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libGLESv2_adreno.so:system/vendor/lib/libGLESv2_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libEGL_adreno.so:system/vendor/lib64/libEGL_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libEGL_adreno.so:system/vendor/lib/libEGL_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libfastcvadsp_stub.so:system/vendor/lib64/libfastcvadsp_stub.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:system/vendor/lib/libadsp_hvx_callback_skel.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
+vendor/lge/v30-common/proprietary/vendor/lib/liblgawb_main.so:system/vendor/lib/liblgawb_main.so \
+vendor/lge/v30-common/proprietary/vendor/lib/liblgae_main.so:system/vendor/lib/liblgae_main.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
+vendor/lge/v30-common/proprietary/vendor/lib/liblgcine_core.so:system/vendor/lib/liblgcine_core.so \
+vendor/lge/v30-common/proprietary/vendor/lib/liblgaf_core.so:system/vendor/lib/liblgaf_core.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
+vendor/lge/v30-common/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
+vendor/lge/v30-common/proprietary/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_abf48.so:system/vendor/lib/libmmcamera_isp_abf48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_aec_bg_stats47.so:system/vendor/lib/libmmcamera_isp_aec_bg_stats47.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_bf_stats47.so:system/vendor/lib/libmmcamera_isp_bf_stats47.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_bg_stats46.so:system/vendor/lib/libmmcamera_isp_bg_stats46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_bhist_stats44.so:system/vendor/lib/libmmcamera_isp_bhist_stats44.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_black_level48.so:system/vendor/lib/libmmcamera_isp_black_level48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_bpc48.so:system/vendor/lib/libmmcamera_isp_bpc48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_cac47.so:system/vendor/lib/libmmcamera_isp_cac47.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_chroma_enhan40.so:system/vendor/lib/libmmcamera_isp_chroma_enhan40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_chroma_suppress40.so:system/vendor/lib/libmmcamera_isp_chroma_suppress40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_clamp_encoder40.so:system/vendor/lib/libmmcamera_isp_clamp_encoder40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_clamp_video40.so:system/vendor/lib/libmmcamera_isp_clamp_video40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_clamp_viewfinder40.so:system/vendor/lib/libmmcamera_isp_clamp_viewfinder40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_color_correct46.so:system/vendor/lib/libmmcamera_isp_color_correct46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_encoder46.so:system/vendor/lib/libmmcamera_isp_color_xform_encoder46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_video46.so:system/vendor/lib/libmmcamera_isp_color_xform_video46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so:system/vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_cs_stats46.so:system/vendor/lib/libmmcamera_isp_cs_stats46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_demosaic48.so:system/vendor/lib/libmmcamera_isp_demosaic48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_demux48.so:system/vendor/lib/libmmcamera_isp_demux48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_encoder46.so:system/vendor/lib/libmmcamera_isp_fovcrop_encoder46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_video46.so:system/vendor/lib/libmmcamera_isp_fovcrop_video46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so:system/vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_gamma44.so:system/vendor/lib/libmmcamera_isp_gamma44.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_gic48.so:system/vendor/lib/libmmcamera_isp_gic48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_gtm46.so:system/vendor/lib/libmmcamera_isp_gtm46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_hdr48.so:system/vendor/lib/libmmcamera_isp_hdr48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_hdr_be_stats46.so:system/vendor/lib/libmmcamera_isp_hdr_be_stats46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_hdr_bhist_stats44.so:system/vendor/lib/libmmcamera_isp_hdr_bhist_stats44.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_ihist_stats46.so:system/vendor/lib/libmmcamera_isp_ihist_stats46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_linearization40.so:system/vendor/lib/libmmcamera_isp_linearization40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_ltm47.so:system/vendor/lib/libmmcamera_isp_ltm47.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_luma_adaptation40.so:system/vendor/lib/libmmcamera_isp_luma_adaptation40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_mce40.so:system/vendor/lib/libmmcamera_isp_mce40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_mesh_rolloff44.so:system/vendor/lib/libmmcamera_isp_mesh_rolloff44.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_pdaf48.so:system/vendor/lib/libmmcamera_isp_pdaf48.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_pedestal_correct46.so:system/vendor/lib/libmmcamera_isp_pedestal_correct46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_rs_stats46.so:system/vendor/lib/libmmcamera_isp_rs_stats46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_scaler_encoder46.so:system/vendor/lib/libmmcamera_isp_scaler_encoder46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_scaler_video46.so:system/vendor/lib/libmmcamera_isp_scaler_video46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_scaler_viewfinder46.so:system/vendor/lib/libmmcamera_isp_scaler_viewfinder46.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_sce40.so:system/vendor/lib/libmmcamera_isp_sce40.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_isp_snr47.so:system/vendor/lib/libmmcamera_isp_snr47.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera_faceproc.so:system/vendor/lib64/libmmcamera_faceproc.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera_faceproc2.so:system/vendor/lib64/libmmcamera_faceproc2.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_faceproc2.so:system/vendor/lib/libmmcamera_faceproc2.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libchromaflash.so:system/vendor/lib64/libchromaflash.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_dummyalgo.so:system/vendor/lib/libmmcamera_dummyalgo.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:system/vendor/lib/libmmcamera_facedetection_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub2.so:system/vendor/lib/libmmcamera_imglib_faceproc_adspstub2.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_edgesmooth_lib.so:system/vendor/lib/libmmcamera_edgesmooth_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libedge_smooth_hvx_stub.so:system/vendor/lib/libedge_smooth_hvx_stub.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_eebinparse.so:system/vendor/lib/libmmcamera_eebinparse.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:system/vendor/lib/libmmcamera2_pp_buf_mgr.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
+vendor/lge/v30-common/proprietary/vendor/lib/liblgcamera_beautypreview.so:system/vendor/lib/liblgcamera_beautypreview.so \
+vendor/lge/v30-common/proprietary/lib/libarcsoft_beauty_shot.so:system/lib/libarcsoft_beauty_shot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/liboptizoom.so:system/vendor/lib64/liboptizoom.so \
+vendor/lge/v30-common/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_sat_dummy_lib.so:system/vendor/lib/libmmcamera_sat_dummy_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_sac_lib.so:system/vendor/lib/libmmcamera_sac_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmemalloc.so:system/vendor/lib64/libmemalloc.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libqdutils.so:system/vendor/lib64/libqdutils.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libqservice.so:system/vendor/lib64/libqservice.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqservice.so:system/vendor/lib/libqservice.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqdutils.so:system/vendor/lib/libqdutils.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmemalloc.so:system/vendor/lib/libmemalloc.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_paaf_lib.so:system/vendor/lib/libmmcamera_paaf_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libseemore.so:system/vendor/lib64/libseemore.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libqdMetaData.so:system/vendor/lib64/libqdMetaData.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqdMetaData.so:system/vendor/lib/libqdMetaData.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
+vendor/lge/v30-common/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+vendor/lge/v30-common/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+vendor/lge/v30-common/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_hi553.so:system/vendor/lib/libmmcamera_hi553.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_hi553_brcf016gwz_eeprom.so:system/vendor/lib/libmmcamera_hi553_brcf016gwz_eeprom.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_hvx_add_constant.so:system/vendor/lib/libmmcamera_hvx_add_constant.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_hvx_grid_sum.so:system/vendor/lib/libmmcamera_hvx_grid_sum.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so:system/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_imx351.so:system/vendor/lib/libmmcamera_imx351.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_imx351_m24c64m_eeprom.so:system/vendor/lib/libmmcamera_imx351_m24c64m_eeprom.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_s5k3m3.so:system/vendor/lib/libmmcamera_s5k3m3.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_s5k3m3_brcb032gwz_eeprom.so:system/vendor/lib/libmmcamera_s5k3m3_brcb032gwz_eeprom.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_3a_face_unlock.so:system/vendor/lib/libchromatix_hi553_3a_face_unlock.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_3a_vt.so:system/vendor/lib/libchromatix_hi553_3a_vt.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_4k_preview_3a.so:system/vendor/lib/libchromatix_hi553_4k_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_4k_video_3a.so:system/vendor/lib/libchromatix_hi553_4k_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_common.so:system/vendor/lib/libchromatix_hi553_common.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_face_unlock.so:system/vendor/lib/libchromatix_hi553_cpp_face_unlock.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_liveshot.so:system/vendor/lib/libchromatix_hi553_cpp_liveshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_preview.so:system/vendor/lib/libchromatix_hi553_cpp_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_preview_lgapp.so:system/vendor/lib/libchromatix_hi553_cpp_preview_lgapp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_snapshot.so:system/vendor/lib/libchromatix_hi553_cpp_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_snapshot_lgapp.so:system/vendor/lib/libchromatix_hi553_cpp_snapshot_lgapp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_video.so:system/vendor/lib/libchromatix_hi553_cpp_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_cpp_vt.so:system/vendor/lib/libchromatix_hi553_cpp_vt.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_default_preview.so:system/vendor/lib/libchromatix_hi553_default_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_default_video.so:system/vendor/lib/libchromatix_hi553_default_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_face_unlock.so:system/vendor/lib/libchromatix_hi553_face_unlock.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_isp_vt.so:system/vendor/lib/libchromatix_hi553_isp_vt.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_postproc.so:system/vendor/lib/libchromatix_hi553_postproc.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_preview.so:system/vendor/lib/libchromatix_hi553_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_snapshot.so:system/vendor/lib/libchromatix_hi553_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_snapshot_lgapp.so:system/vendor/lib/libchromatix_hi553_snapshot_lgapp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_video.so:system/vendor/lib/libchromatix_hi553_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_zsl_preview.so:system/vendor/lib/libchromatix_hi553_zsl_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_hi553_zsl_video.so:system/vendor/lib/libchromatix_hi553_zsl_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_4k_preview_3a.so:system/vendor/lib/libchromatix_imx351_4k_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_4k_video_3a.so:system/vendor/lib/libchromatix_imx351_4k_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_binning_4k_3a.so:system/vendor/lib/libchromatix_imx351_binning_4k_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_binning_video_3a.so:system/vendor/lib/libchromatix_imx351_binning_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_binning_zsl_3a.so:system/vendor/lib/libchromatix_imx351_binning_zsl_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cinema_log.so:system/vendor/lib/libchromatix_imx351_cinema_log.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cinema_log_cpp.so:system/vendor/lib/libchromatix_imx351_cinema_log_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cinema_look.so:system/vendor/lib/libchromatix_imx351_cinema_look.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cinema_look_cpp.so:system/vendor/lib/libchromatix_imx351_cinema_look_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_common.so:system/vendor/lib/libchromatix_imx351_common.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_common_cinema.so:system/vendor/lib/libchromatix_imx351_common_cinema.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_hd.so:system/vendor/lib/libchromatix_imx351_cpp_hd.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx351_cpp_hfr_120.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_hfr_240.so:system/vendor/lib/libchromatix_imx351_cpp_hfr_240.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx351_cpp_hfr_60.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_liveshot.so:system/vendor/lib/libchromatix_imx351_cpp_liveshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_liveshot_raw_hdr.so:system/vendor/lib/libchromatix_imx351_cpp_liveshot_raw_hdr.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_preview.so:system/vendor/lib/libchromatix_imx351_cpp_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_preview_binning.so:system/vendor/lib/libchromatix_imx351_cpp_preview_binning.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_snapshot.so:system/vendor/lib/libchromatix_imx351_cpp_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_snapshot_binning.so:system/vendor/lib/libchromatix_imx351_cpp_snapshot_binning.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_snapshot_raw_hdr.so:system/vendor/lib/libchromatix_imx351_cpp_snapshot_raw_hdr.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_video.so:system/vendor/lib/libchromatix_imx351_cpp_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_video_4k.so:system/vendor/lib/libchromatix_imx351_cpp_video_4k.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_cpp_video_binning.so:system/vendor/lib/libchromatix_imx351_cpp_video_binning.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_default_preview_3a.so:system/vendor/lib/libchromatix_imx351_default_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_default_video.so:system/vendor/lib/libchromatix_imx351_default_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_default_video_3a.so:system/vendor/lib/libchromatix_imx351_default_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_flash_food_cpp.so:system/vendor/lib/libchromatix_imx351_flash_food_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_flash_snapshot_cpp.so:system/vendor/lib/libchromatix_imx351_flash_snapshot_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_food_preview.so:system/vendor/lib/libchromatix_imx351_food_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_food_preview_cpp.so:system/vendor/lib/libchromatix_imx351_food_preview_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_food_snapshot.so:system/vendor/lib/libchromatix_imx351_food_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_food_snapshot_cpp.so:system/vendor/lib/libchromatix_imx351_food_snapshot_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hd.so:system/vendor/lib/libchromatix_imx351_hd.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hd_3a.so:system/vendor/lib/libchromatix_imx351_hd_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hfr_120.so:system/vendor/lib/libchromatix_imx351_hfr_120.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hfr_120_3a.so:system/vendor/lib/libchromatix_imx351_hfr_120_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hfr_240.so:system/vendor/lib/libchromatix_imx351_hfr_240.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hfr_240_3a.so:system/vendor/lib/libchromatix_imx351_hfr_240_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hfr_60.so:system/vendor/lib/libchromatix_imx351_hfr_60.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hfr_60_3a.so:system/vendor/lib/libchromatix_imx351_hfr_60_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_hfr_90_3a.so:system/vendor/lib/libchromatix_imx351_hfr_90_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_panorama_cpp.so:system/vendor/lib/libchromatix_imx351_panorama_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_panorama_preview_3a.so:system/vendor/lib/libchromatix_imx351_panorama_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_postproc.so:system/vendor/lib/libchromatix_imx351_postproc.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_preview.so:system/vendor/lib/libchromatix_imx351_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_preview_raw_hdr_3a.so:system/vendor/lib/libchromatix_imx351_preview_raw_hdr_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_preview_raw_hdr_3a_cinema.so:system/vendor/lib/libchromatix_imx351_preview_raw_hdr_3a_cinema.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_snapshot.so:system/vendor/lib/libchromatix_imx351_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_snapshot_raw_hdr.so:system/vendor/lib/libchromatix_imx351_snapshot_raw_hdr.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_video_4k.so:system/vendor/lib/libchromatix_imx351_video_4k.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_zsl_preview_3a.so:system/vendor/lib/libchromatix_imx351_zsl_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_imx351_zsl_video_3a.so:system/vendor/lib/libchromatix_imx351_zsl_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_4k_preview_3a.so:system/vendor/lib/libchromatix_s5k3m3_4k_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_4k_video_3a.so:system/vendor/lib/libchromatix_s5k3m3_4k_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_common.so:system/vendor/lib/libchromatix_s5k3m3_common.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k3m3_cpp_hfr_120.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k3m3_cpp_hfr_60.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k3m3_cpp_liveshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_liveshot_raw_hdr.so:system/vendor/lib/libchromatix_s5k3m3_cpp_liveshot_raw_hdr.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_preview.so:system/vendor/lib/libchromatix_s5k3m3_cpp_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3m3_cpp_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_snapshot_raw_hdr.so:system/vendor/lib/libchromatix_s5k3m3_cpp_snapshot_raw_hdr.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_cpp_video.so:system/vendor/lib/libchromatix_s5k3m3_cpp_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_default_preview_3a.so:system/vendor/lib/libchromatix_s5k3m3_default_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_default_video.so:system/vendor/lib/libchromatix_s5k3m3_default_video.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_default_video_3a.so:system/vendor/lib/libchromatix_s5k3m3_default_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_flash_food_cpp.so:system/vendor/lib/libchromatix_s5k3m3_flash_food_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_flash_snapshot_cpp.so:system/vendor/lib/libchromatix_s5k3m3_flash_snapshot_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_food_preview.so:system/vendor/lib/libchromatix_s5k3m3_food_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_food_preview_cpp.so:system/vendor/lib/libchromatix_s5k3m3_food_preview_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_food_snapshot.so:system/vendor/lib/libchromatix_s5k3m3_food_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_food_snapshot_cpp.so:system/vendor/lib/libchromatix_s5k3m3_food_snapshot_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_hfr_120.so:system/vendor/lib/libchromatix_s5k3m3_hfr_120.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k3m3_hfr_120_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_hfr_60.so:system/vendor/lib/libchromatix_s5k3m3_hfr_60.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k3m3_hfr_60_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_panorama_3a.so:system/vendor/lib/libchromatix_s5k3m3_panorama_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_panorama_cpp.so:system/vendor/lib/libchromatix_s5k3m3_panorama_cpp.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_postproc.so:system/vendor/lib/libchromatix_s5k3m3_postproc.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_preview.so:system/vendor/lib/libchromatix_s5k3m3_preview.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_preview_raw_hdr_3a.so:system/vendor/lib/libchromatix_s5k3m3_preview_raw_hdr_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_snapshot.so:system/vendor/lib/libchromatix_s5k3m3_snapshot.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_snapshot_raw_hdr.so:system/vendor/lib/libchromatix_s5k3m3_snapshot_raw_hdr.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k3m3_zsl_preview_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libchromatix_s5k3m3_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k3m3_zsl_video_3a.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libactuator_bu24333gwl.so:system/vendor/lib/libactuator_bu24333gwl.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libactuator_renesascl.so:system/vendor/lib/libactuator_renesascl.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libois_bu24333gwl.so:system/vendor/lib/libois_bu24333gwl.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libois_bu63165.so:system/vendor/lib/libois_bu63165.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libois_renesascl.so:system/vendor/lib/libois_renesascl.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
+vendor/lge/v30-common/proprietary/lib/liblgmda.so:system/lib/liblgmda.so \
+vendor/lge/v30-common/proprietary/lib/liblghdri.so:system/lib/liblghdri.so \
+vendor/lge/v30-common/proprietary/lib/libSJFingerDetect.so:system/lib/libSJFingerDetect.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libsymphony-1.1.2.so:system/vendor/lib64/libsymphony-1.1.2.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libsymphonypower-1.1.2.so:system/vendor/lib64/libsymphonypower-1.1.2.so \
+vendor/lge/v30-common/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+vendor/lge/v30-common/proprietary/lib64/hw/powerhint.qti.so:system/lib64/hw/powerhint.qti.so \
+vendor/lge/v30-common/proprietary/lib/hw/powerhint.qti.so:system/lib/hw/powerhint.qti.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libsymphonypower-1.1.2.so:system/vendor/lib/libsymphonypower-1.1.2.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libsymphony-1.1.2.so:system/vendor/lib/libsymphony-1.1.2.so \
+vendor/lge/v30-common/proprietary/lib/libSJVideoNR.so:system/lib/libSJVideoNR.so \
+vendor/lge/v30-common/proprietary/lib/libAutoContrast.so:system/lib/libAutoContrast.so \
+vendor/lge/v30-common/proprietary/lib/libmorpho_image_stab31.so:system/lib/libmorpho_image_stab31.so \
+vendor/lge/v30-common/proprietary/lib/libmorpho_superzoom.so:system/lib/libmorpho_superzoom.so \
+vendor/lge/v30-common/proprietary/lib/libarcsoft_object_tracking.so:system/lib/libarcsoft_object_tracking.so \
+vendor/lge/v30-common/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
+vendor/lge/v30-common/proprietary/lib/libfilm_emulation.so:system/lib/libfilm_emulation.so \
+vendor/lge/v30-common/proprietary/lib/libfilm_emulation_symphony.so:system/lib/libfilm_emulation_symphony.so \
+vendor/lge/v30-common/proprietary/lib/libbwfocuspeaking.so:system/lib/libbwfocuspeaking.so \
+vendor/lge/v30-common/proprietary/vendor/lib/libcinemaeffect.so:system/vendor/lib/libcinemaeffect.so \
+vendor/lge/v30-common/proprietary/lib64/libn2ph.so:system/lib64/libn2ph.so 
