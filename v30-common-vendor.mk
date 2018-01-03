@@ -1254,3 +1254,55 @@ vendor/lge/v30-common/proprietary/vendor/lib/libcinemaeffect.so:system/vendor/li
 vendor/lge/v30-common/proprietary/lib64/libn2ph.so:system/lib64/libn2ph.so \
 vendor/lge/v30-common/proprietary/vendor/lib64/libqseed3.so:system/vendor/lib64/libqseed3.so \
 vendor/lge/v30-common/proprietary/vendor/lib/libqseed3.so:system/vendor/lib/libqseed3.so
+
+PRODUCT_COPY_FILES += \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libedge_smooth_skel.so:system/vendor/lib/rfsa/adsp/libedge_smooth_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system//vendor/lib/rfsa/adsp/libfastcvadsp.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libqvr_adsp_driver_skel.so:system/vendor/lib/rfsa/adsp/libqvr_adsp_driver_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so:system/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so:system/vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so:system/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libscveVideoSummary_skel.so:system/vendor/lib/rfsa/adsp/libscveVideoSummary_skel.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so:system/vendor/lib/rfsa/adsp/libvpp_frc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:system/vendor/lib/rfsa/adsp/libvpp_svc_skel.so \
+	vendor/lge/v30-common/proprietary/bin/btnvtool:system/bin/btnvtool \
+	vendor/lge/v30-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+	vendor/lge/v30-common/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
+	vendor/lge/v30-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
+	vendor/lge/v30-common/proprietary/bin/lowi-server:system/bin/lowi-server \
+	vendor/lge/v30-common/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+	vendor/lge/v30-common/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
+	vendor/lge/v30-common/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
+	vendor/lge/v30-common/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libizat_client_api.so:system/vendor/lib64/libizat_client_api.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libmiracast.so:system/vendor/lib64/libmiracast.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libmiracast.so:system/vendor/lib/libmiracast.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libpdmapper.so:system/vendor/lib64/libpdmapper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libpdnotifier.so:system/vendor/lib64/libpdnotifier.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
+	vendor/lge/v30-common/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
+	vendor/lge/v30-common/proprietary/bin/qvop-daemon:system/bin/qvop-daemon \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqvop-service.so:system/vendor/lib64/libqvop-service.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqvop-service.so:system/vendor/lib/libqvop-service.so \
+	vendor/lge/v30-common/proprietary/bin/cnss-daemon:system/bin/cnss-daemon
+
+
