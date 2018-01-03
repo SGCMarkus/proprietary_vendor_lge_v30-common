@@ -1303,6 +1303,30 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/bin/qvop-daemon:system/bin/qvop-daemon \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libqvop-service.so:system/vendor/lib64/libqvop-service.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libqvop-service.so:system/vendor/lib/libqvop-service.so \
-	vendor/lge/v30-common/proprietary/bin/cnss-daemon:system/bin/cnss-daemon
-
+	vendor/lge/v30-common/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
+	vendor/lge/v30-common/proprietary/lib/soundfx/liblgeffectwrapper.so:system/lib/soundfx/liblgeffectwrapper.so \
+	vendor/lge/v30-common/proprietary/lib64/soundfx/liblgeffectwrapper.so:system/lib64/soundfx/liblgeffectwrapper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libgcs.so:system/vendor/lib64/libgcs.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libgcs-osal.so:system/vendor/lib64/libgcs-osal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libgcs-osal.so:system/vendor/lib/libgcs-osal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libgcs-calwrapper.so:system/vendor/lib64/libgcs-calwrapper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libgcs-calwrapper.so:system/vendor/lib/libgcs-calwrapper.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libgcs-ipc.so:system/vendor/lib64/libgcs-ipc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libgcs-ipc.so:system/vendor/lib/libgcs-ipc.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libgcs.so:system/vendor/lib/libgcs.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libqtigef.so:system/vendor/lib/libqtigef.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libqtigef.so:system/vendor/lib64/libqtigef.so \
+        vendor/lge/v30-common/proprietary/etc/graphite_ipc_platform_info.xml:system/etc/graphite_ipc_platform_info.xml
 
