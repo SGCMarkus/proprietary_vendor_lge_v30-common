@@ -1328,5 +1328,11 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib/libgcs.so:system/vendor/lib/libgcs.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libqtigef.so:system/vendor/lib/libqtigef.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libqtigef.so:system/vendor/lib64/libqtigef.so \
-        vendor/lge/v30-common/proprietary/etc/graphite_ipc_platform_info.xml:system/etc/graphite_ipc_platform_info.xml
-
+        vendor/lge/v30-common/proprietary/etc/graphite_ipc_platform_info.xml:system/etc/graphite_ipc_platform_info.xml \
+        vendor/lge/v30-common/proprietary/etc/firmware/Tfa9872.cnt:system/etc/firmware/Tfa9872.cnt \
+        vendor/lge/v30-common/proprietary/etc/firmware/hbtp/hbtpcfg.dat:system/etc/firmware/hbtp/hbtpcfg.dat \
+        vendor/lge/v30-common/proprietary/etc/firmware/hbtp/hbtpcfg2.dat:system/etc/firmware/hbtp/hbtpcfg2.dat \
+        vendor/lge/v30-common/proprietary/etc/firmware/hbtp/qtc800h.bin:system/etc/firmware/hbtp/qtc800h.bin \
+        vendor/lge/v30-common/proprietary/etc/firmware/hbtp/qtc800s_dsp.bin:system/etc/firmware/hbtp/qtc800s_dsp.bin \
+        vendor/lge/v30-common/proprietary/lib/hw/audio.mirrorlink.default.so:system/lib/hw/audio.mirrorlink.default.so \
+	vendor/lge/v30-common/proprietary/lib/libmirrorlinkhal.so:system/lib/libmirrorlinkhal.so 
