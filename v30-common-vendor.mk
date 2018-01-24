@@ -485,7 +485,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
@@ -501,7 +500,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
@@ -575,7 +573,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_test.so:system/vendor/lib64/libsensor_test.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
@@ -600,12 +597,10 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_lge_cal.so:system/vendor/lib64/libsensor_lge_cal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libsensor_thresh.so:system/vendor/lib64/libsensor_thresh.so \
@@ -652,7 +647,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libtinyxml2_1.so:system/vendor/lib/libtinyxml2_1.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
@@ -661,7 +655,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
@@ -711,7 +704,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
@@ -731,7 +723,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
@@ -739,7 +730,6 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_lge_cal.so:system/vendor/lib/libsensor_lge_cal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libsensor_thresh.so:system/vendor/lib/libsensor_thresh.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
@@ -1310,18 +1300,8 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libgcs-osal.so:system/vendor/lib64/libgcs-osal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libgcs-osal.so:system/vendor/lib/libgcs-osal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libgcs-calwrapper.so:system/vendor/lib64/libgcs-calwrapper.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
-	vendor/lge/v30-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
-	vendor/lge/v30-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libgcs-calwrapper.so:system/vendor/lib/libgcs-calwrapper.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libgcs-ipc.so:system/vendor/lib64/libgcs-ipc.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libgcs-ipc.so:system/vendor/lib/libgcs-ipc.so \
@@ -1335,4 +1315,14 @@ PRODUCT_COPY_FILES += \
         vendor/lge/v30-common/proprietary/etc/firmware/hbtp/qtc800h.bin:system/etc/firmware/hbtp/qtc800h.bin \
         vendor/lge/v30-common/proprietary/etc/firmware/hbtp/qtc800s_dsp.bin:system/etc/firmware/hbtp/qtc800s_dsp.bin \
         vendor/lge/v30-common/proprietary/lib/hw/audio.mirrorlink.default.so:system/lib/hw/audio.mirrorlink.default.so \
-	vendor/lge/v30-common/proprietary/lib/libmirrorlinkhal.so:system/lib/libmirrorlinkhal.so 
+	vendor/lge/v30-common/proprietary/lib/libmirrorlinkhal.so:system/lib/libmirrorlinkhal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
+	vendor/lge/v30-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
+	vendor/lge/v30-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
