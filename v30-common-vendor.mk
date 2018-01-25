@@ -857,12 +857,13 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     TimeService \
     shutdownlistener \
-    CNEService \
     QtiTetherService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
     qcrilhook
+
+#    CNEService \
 
 -include vendor/extra/devices.mk
 ifneq ($(call is-qc-perf-target),true)
@@ -1326,3 +1327,4 @@ PRODUCT_COPY_FILES += \
 	vendor/lge/v30-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
 	vendor/lge/v30-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
 	vendor/lge/v30-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
+	vendor/lge/v30-common/proprietary/lib64/libvehiclenetwork-native.so:system/lib64/libvehiclenetwork-native.so \
