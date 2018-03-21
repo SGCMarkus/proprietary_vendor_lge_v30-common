@@ -181,6 +181,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v30-common/proprietary/lib64/liblgkm.so:system/lib64/liblgkm.so \
     vendor/lge/v30-common/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/lge/v30-common/proprietary/lib64/libn2ph.so:system/lib64/libn2ph.so \
+    vendor/lge/v30-common/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/lge/v30-common/proprietary/lib64/libvehiclenetwork-native.so:system/lib64/libvehiclenetwork-native.so \
     vendor/lge/v30-common/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
     vendor/lge/v30-common/proprietary/lib64/soundfx/liblgeffectwrapper.so:system/lib64/soundfx/liblgeffectwrapper.so \
@@ -686,14 +687,18 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v30-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+    vendor/lge/v30-common/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/lge/v30-common/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+    vendor/lge/v30-common/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/lge/v30-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/lge/v30-common/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/lge/v30-common/proprietary/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml:system/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml \
     vendor/lge/v30-common/proprietary/etc/thermal-engine-8998.conf:system/etc/thermal-engine-8998.conf \
     vendor/lge/v30-common/proprietary/etc/thermal-engine-default.conf:system/etc/thermal-engine-default.conf \
@@ -705,6 +710,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v30-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/lge/v30-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/lge/v30-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/lge/v30-common/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
+    vendor/lge/v30-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/lge/v30-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/lge/v30-common/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/lge/v30-common/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
@@ -1027,13 +1034,19 @@ PRODUCT_PACKAGES += \
     libsdm-disp-apis \
     libthermalclient \
     libtime_genoff \
+    QtiTelephonyService \
     TimeService \
+    datastatusnotification \
+    embms \
     shutdownlistener \
     CNEService \
     QtiTetherService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
+    ims \
+    imssettings \
+    qcnvitems \
     qcrilhook
 endif
 
